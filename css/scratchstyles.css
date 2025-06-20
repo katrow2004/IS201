@@ -285,3 +285,25 @@ footer {
     height: 100%;
     border: none;
 }
+
+/* Hide the gray toggle button on desktop */
+.navbar-toggler {
+    display: none !important;
+}
+
+/* Only show on mobile screens */
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block !important;
+        border: none;
+        background: transparent;
+    }
+}
+
+    .paragraph-box {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+

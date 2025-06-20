@@ -1,0 +1,287 @@
+body {
+    color: rgb(46, 73, 149);
+    background-color: rgb(246, 246, 246);
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.link {
+    font-weight: bold;
+    color: rgb(24, 73, 34);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 45px;
+}
+
+.title {
+    font-size: 65px;
+    color: white;
+    text-align: center;
+
+}
+.subheading {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.navigationbar {
+    font: 12px;
+    color: rgb(28, 66, 99);
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bold;
+    text-align: justify;
+}
+
+#mainNav {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333 !important;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+    transform: translateY(-1px);
+}
+
+/* Make navbar sticky */
+#mainNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Add padding to body to account for fixed navbar */
+body {
+    padding-top: 76px;
+}
+
+.hero-header {
+    background-image: url('https://images.unsplash.com/photo-1562310503-a918c4c61e38?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0aW9uYWwlMjBwYXJrfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Custom navbar styling */
+#mainNav {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50 !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #3498db !important;
+}
+
+/* Navigation links */
+.nav-link {
+    font-weight: 500;
+    color: #2c3e50 !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3498db !important;
+    transform: translateY(-2px);
+}
+
+/* Hover underline effect */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #3498db;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+/* Active page styling */
+.nav-link.active {
+    color: #3498db !important;
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* Mobile toggler */
+.navbar-toggler {
+    border: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Scrolled navbar effect */
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    padding: 0.5rem 0;
+}
+
+/* Add padding to body for fixed navbar */
+body {
+    padding-top: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+    }
+}
+
+/* Footer Enhancements */
+footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0 2rem 0;
+    margin-top: 4rem;
+}
+
+footer .border-top {
+    border-color: #dee2e6 !important;
+    border-width: 2px !important;
+}
+
+/* Social Media Icons */
+footer .fa-stack {
+    transition: all 0.3s ease;
+}
+
+footer .fa-stack:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* Individual social media colors */
+footer .list-inline-item:nth-child(1) .fa-circle {
+    color: #1da1f2; /* Twitter blue */
+}
+
+footer .list-inline-item:nth-child(2) .fa-circle {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+footer .list-inline-item:nth-child(3) .fa-circle {
+    color: #333; /* GitHub dark */
+}
+
+footer .list-inline-item:nth-child(4) .fa-circle {
+    color: #ea4335; /* Email red */
+}
+
+footer .list-inline-item:nth-child(5) .fa-circle {
+    color: #e4405f; /* Instagram pink */
+}
+
+/* Hover effects */
+footer .fa-stack:hover .fa-circle {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+
+/* Copyright text */
+footer .small {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+}
+
+/* Add subtle shadow to footer */
+footer {
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    footer {
+        padding: 2rem 0 1.5rem 0;
+        margin-top: 2rem;
+    }
+    
+    footer .list-inline-item {
+        margin: 0 0.5rem;
+    }
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
